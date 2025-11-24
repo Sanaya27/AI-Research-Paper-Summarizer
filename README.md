@@ -25,7 +25,6 @@ Perfect for students, researchers, engineers, and literature-review workflows.
 - 🧮 **Equation & Algorithm Extraction**
 - 📊 **Auto-Generated PPT**
 - 📄 **Research Notes PDF Export**
-- 🌗 **Light / Dark Mode UI**
 - ⚡ Fast, accurate and elegant UI built with **Streamlit**
 
 ---
