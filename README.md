@@ -1,134 +1,132 @@
-# Research Paper Summarizer
+# 🌟 AI Research Paper Summarizer
 
-A collaborative project that extracts and summarizes research papers using LLMs. The system is modular, team-driven, and leverages cutting-edge AI for summarization.
+*A powerful Gemini-AI based tool to analyze, summarize, and extract insights from research papers.*
 
----
-
-## 🔹 Project Overview
-
-The **Research Paper Summarizer** is a Python-based solution that:
-- Extracts textual data from PDF research papers
-- Cleans and preprocesses the extracted text
-- Summarizes it using a large language model (Gemini 1.5 Pro)
-- Outputs both the raw and summarized content for easy consumption
+<p align="center">
+  <img src="https://img.shields.io/badge/Framework-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white"/>
+  <img src="https://img.shields.io/badge/AI-Google%20Gemini-6f42c1?style=for-the-badge&logo=google&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white"/>
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge"/>
+</p>
 
 ---
 
-## 🔹 Folder Structure
+## 🚀 Overview
+
+**AI Research Paper Summarizer** is a clean, modern and intelligent PDF-analysis tool powered by **Gemini 2.0 Flash**.  
+It extracts structured knowledge from academic papers with just one click.  
+Perfect for students, researchers, engineers, and literature-review workflows.
+
+### ✨ Key Features
+- 📝 **AI Summaries** (Short • Medium • Long, 5 different styles)
+- 🎯 **Semantic Question Answering** from the PDF
+- 🔍 **Title & Keyword Extraction**
+- 🕵️ **Plagiarism & Originality Detection**
+- 🧮 **Equation & Algorithm Extraction**
+- 📊 **Auto-Generated PPT**
+- 📄 **Research Notes PDF Export**
+- 🌗 **Light / Dark Mode UI**
+- ⚡ Fast, accurate and elegant UI built with **Streamlit**
+
+---
+
+## 🗂️ Project Structure
 
 ```
-Research-Paper-Summarizer/
-│
-├── pdf-text-extractor-backend/        # Khushboo's component
-│   ├── main.py
-│   ├── llm_infer.py
-│   ├── summary.txt
-│   ├── extracted_text.txt
-│   ├── requirements.txt
-│   ├── sample.pdf
-│   └── .env (ignored)
-│
-├── frontend/                          # Riya's component (placeholder)
-│   └── (To be added)
-│
-├── integrations/                      # Sanaya & Himank
-│   └── (Model API, backend linking)
-│
-├── datasets/                          # Anjika's component (placeholder)
-│   └── (Research paper PDFs, metadata)
-│
-├── docs/                              # Yashvi's documentation
-│   ├── architecture.md
-│   ├── methodology.md
-│   └── summary_flow.md
-│
-├── .gitignore
-└── README.md                          # You’re reading it
+📦 Research-Paper-Summarizer
+├── app.py
+├── summarizer.py
+├── pdf_utils.py
+├── requirements.txt
+├── README.md
+└── .gitignore
 ```
 
 ---
 
-## 🔹 Team Roles
+## 🛠️ Installation
 
-| Name      | Role                              | Responsibility                                   |
-|-----------|-----------------------------------|--------------------------------------------------|
-| Sanaya    | LLM Integration & GitHub Maintainer | Connects backend with Gemini, manages repo       |
-| Riya      | Frontend & UI Coordinator +  Integration Specialist       | Will design the frontend interface,integrates all components               |
-| Yashvi    | Report & Documentation Lead       | Writes README, methodology, and documentation    |
-| Anjika    | Research & Dataset Curator        | Finds research papers, prepares inputs           |
-| Khushboo  | Backend Developer                 | Builds PDF extractor, text processor             |
-| Himank    | Testing Specialist                | Tests final outputs                              |
-
----
-
-## 🔹 Technologies Used
-
-- **Python 3.11+**
-- **Google Gemini API (gemini-1.5-pro)**
-- **PyMuPDF (PDF text extraction)**
-- **dotenv (secure API key handling)**
-- **Git/GitHub (version control & collaboration)**
-- **Streamlit**
-- **Streamlit Cloud**
-
----
-
-## 🔹 How to Run the Backend Locally
-
-1. Clone the repo:
+### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/Sanaya27/Research-Paper-Summarizer.git
+git clone https://github.com/<your-username>/Research-Paper-Summarizer.git
+cd Research-Paper-Summarizer
 ```
 
-2. Navigate to the backend folder:
-```bash
-cd Research-Paper-Summarizer/pdf-text-extractor-backend
-```
-
-3. Create and activate a virtual environment:
-```bash
-python -m venv .venv
-.venv\Scripts\activate   # for Windows
-```
-
-4. Install dependencies:
+### 2️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-5. Add your API key to a `.env` file:
+### 3️⃣ Add Your Gemini API Key
+Create:
+
 ```
-GOOGLE_API_KEY=your_api_key_here
+.streamlit/secrets.toml
 ```
 
-6. Run the backend:
+Add:
+```toml
+GEMINI_API_KEY = "your_api_key_here"
+```
+
+---
+
+## ▶️ Run the App
+
 ```bash
-python main.py
+streamlit run app.py
 ```
 
 ---
 
-## 🔹 Contribution Guidelines
+## 🧠 How It Works
 
-- Always pull before pushing:  
-  `git pull origin main`
-
-- Create a new branch if you're working on a feature:
-  ```bash
-  git checkout -b feature-branch-name
-  ```
-
-- Commit often with meaningful messages
-
-- Do **not** upload your `.env` or local PDF files to the repo
-
----
-
-## 🔹 License
-
-This project is MIT Licensed.
+1. Upload a research paper (PDF)  
+2. The app extracts raw text  
+3. Gemini processes and generates:
+   - summaries  
+   - keywords  
+   - equations  
+   - plagiarism insights  
+   - structured data for PPT / PDF  
+4. You can download:
+   - 📥 Summary (TXT)  
+   - 📥 Generated Presentation (PPTX)  
+   - 📥 Research Notes (PDF)
 
 ---
 
-Let’s build something impactful, together.
+## 📊 Screenshots
+
+> *(Add screenshots after deployment for a more attractive README.)*
+
+---
+
+## 📦 Deployment (Streamlit Cloud)
+
+1. Push project to GitHub  
+2. Go to **share.streamlit.io**  
+3. Connect repo → select `app.py`  
+4. Add secrets under **App Settings → Secrets**  
+5. Deploy 🎉
+
+---
+
+## 📝 License
+This project is licensed under the **MIT License**.
+
+---
+
+## 💙 Acknowledgements
+- Google Gemini AI  
+- Python-pptx  
+- ReportLab  
+- Streamlit  
+- Open-Source Community  
+
+---
+
+## ⭐ Support
+If you liked this project — **star the repo** ⭐  
+Your support motivates further improvements!
 
