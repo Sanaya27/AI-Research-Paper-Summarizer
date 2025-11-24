@@ -30,6 +30,9 @@ Perfect for students, researchers, engineers, and literature-review workflows.
 
 ---
 
+## 🗂️ Project Flowchart
+<img width="4624" height="2884" alt="diagram (2)" src="https://github.com/user-attachments/assets/c49f0b5a-b13b-4222-b7cc-fbbe0399306d" />
+
 ## 🗂️ Project Structure
 
 ```
@@ -98,7 +101,11 @@ streamlit run app.py
 
 ## 📊 Screenshots
 
-> *(Add screenshots after deployment for a more attractive README.)*
+><img width="2556" height="1263" alt="image" src="https://github.com/user-attachments/assets/1de64490-8569-448a-80c2-ce5453cf60dc" />
+<img width="2559" height="1264" alt="image" src="https://github.com/user-attachments/assets/b6fb3c80-2438-4de1-a8dc-2912cfc6b191" />
+<img width="2558" height="1261" alt="image" src="https://github.com/user-attachments/assets/d4b141ec-72d7-409f-bd69-503ecd78cff1" />
+
+
 
 ---
 
