@@ -1,0 +1,1651 @@
+--- Page 1 ---
+ 
+Applied Mathematical Sciences, Vol. 4, 2010, no. 72, 3611 - 3619 
+ 
+ 
+Deteriorating Inventory Model with Time  
+ 
+Dependent Demand and Partial Backlogging 
+ 
+ 
+Vinod Kumar Mishra 
+ 
+Department of Computer Science & Engineering 
+Kumaon Engineering College 
+ Dwarahat, Almora, - 263653, (Uttarakhand), India 
+vkmishra2005@gmail.com 
+ 
+Lal Sahab Singh 
+ 
+Department of Mathematics & Statistics 
+Dr.Ram Manohar Lohia Avadh University 
+ Faizabad-224001, (Uttar Pradesh), India 
+singhdrlalsahab7@gmail.com 
+ 
+Abstract 
+ 
+In this paper, a deterministic inventory model is developed for deteriorating items 
+in which shortages are allowed and partially backlogged. Deterioration rate is 
+constant, Demand rate is linear function of time, backlogging rate is variable and 
+is dependent on the length of the next replenishment. The model is solved 
+analytically by minimizing the total inventory cost. 
+ 
+Mathematics Subject Classification: 90B05 
+ 
+Keywords: Inventory, deteriorating items, shortages, time dependent demand, 
+partial backlogging.  
+ 
+ 
+1.0 Introduction 
+ 
+Deterioration is defined as decay, damage, spoilage evaporation and loss 
+of utility of the product. Deterioration in inventory is a realistic feature and need 
+to consideration it. Often we encounter products such as fruits, milk, drug, 
+vegetables, and photographic films etc that have a defined period of life time. 
+Such items are referred as deteriorating items. The loss due to deterioration cannot 
+be avoided. Due to deterioration, inventory system faces the problem of shortages  
+
+--- Page 2 ---
+3612                                      V. K. Mishra and L. S. Singh 
+ 
+ 
+and loss of good will or loss of profit. Shortage is a fraction of those customers 
+whose demand is not satisfied in the current period reacts to this by not returning 
+the next period.  
+Inventory in deteriorating items first considered by Within [1957], he 
+considered the deterioration of fashion goods at the end of prescribed storage 
+period. In 1963 Ghare and Schrader extended the classical EOQ formula with 
+exponential decay of inventory due to deterioration and gave a mathematical 
+modeling of inventory in deteriorating items. Dave and Patel [1981] developed the 
+first deteriorating inventory model with linear trend in demand. He considers 
+demand as a linear function of time. Nahmias [1982] gave a review on perishable 
+inventory theory. He reviewed the relevant literature on the problem of 
+determining suitable ordering policies for both fixed life perishable inventory, and 
+inventory subjected to continuous exponential decay. Rafaat [1991] gave a survey 
+of literature on continuously deteriorating inventory models and he considered the 
+effect of deterioration as a function of the on hand level of inventory. He focused 
+to present an up-to-date and complete review of the literature for the continuously 
+deteriorating mathematical inventory models. But all researchers assume that 
+during shortage period all demand either backlogged or lost. In reality it is 
+observed that some customers are willing to wait for the next replenishment. Abad 
+[1996] considered this phenomenon in his model, optimal pricing and lot sizing 
+under the conditions of perishable and partial backordering. He assumed that the 
+backlogging rate depends upon the waiting time for the next replenishment. But 
+he does not include the stock out cost (back order cost and lost sale cost). Chang 
+and Dye [1999] developed an inventory model with time varying demand and 
+partial backlogging. He considered that if longer the waiting time smaller the 
+backlogging rate would be. So the proportion of the customer who would like to 
+accept backlogging at time t is decreasing with the waiting time for the next 
+replenishment. So to take care for this situation he defined a backlogging rate s. t.  
+               
+( )
+(
+)
+1
+1
+B t
+t
+t
+i
+α
+=
++
+−
+ 
+Where 
+it  is the time at which the 
+thi replenishment is making and α is 
+backlogging parameter.  
+Goyal and Giri [2001] gave recent trends of modeling in deteriorating 
+items inventory. They classified inventory models on the basis of demand 
+variations and various other conditions or constraints. Ouyang, Wu and Cheng 
+[2005] developed an inventory model for deteriorating items with exponential 
+declining demand and partial backlogging. Dye, Hsieh and Ouyang [2007] find an 
+optimal selling price and lot size with a varying rate of deterioration and 
+exponential partial backlogging. They assume that a fraction of customers who 
+backlog their orders increases exponentially as the waiting time for the next 
+replenishment decreases. Shah and Shukla [2009] developed a deteriorating 
+inventory model for waiting time partial backlogging when demand is constant 
+and deterioration rate is constant. They made Abad [1996, 2001] more realistic 
+and applicable in practice.  
+In this paper, an inventory model for deteriorating items is developed with  
+
+--- Page 3 ---
+Deteriorating inventory model                                     3613 
+ 
+ 
+time dependent demand and constant rate of deterioration. Shortages are allowed 
+and partially backlogged; backlogging rate is variable and is dependent on the 
+length of the next replenishment.    
+ 
+ 
+2. Assumption and Notations 
+ 
+The mathematical model is based on the following notations and assumptions. 
+ 
+2.1 Notations 
+• 
+A    the ordering cost per order.  
+• 
+C    the purchase cost per unit.  
+• 
+θ     the deterioration rate. 
+• 
+h     the inventory carrying  cost per unit per time unit. 
+• 
+b
+π     the backordered cost per unit short per time unit. 
+• 
+L
+π     the cost of lost sales per unit. 
+• 
+1t      the time at which the inventory level reaches zero, 
+1t ≥0 
+• 
+2t      the length of period during which shortages are allowed, 
+2t ≥0 
+• 
+T      (= 1t + 2t ) the length of cycle time 
+• 
+IM     the maximum inventory level during [0, T]. 
+• 
+IB      the maximum inventory level during shortage period. 
+• 
+Q       (= IM + IB) the order quantity during a cycle of length T. 
+• 
+I1 (t)    the level of positive inventory at time t, 
+1
+0
+t
+t ≤
+≤
+ 
+• 
+I2 (t)    the level of negative inventory at time t,  
+2
+1
+1
+t
+t
+t
+t
++
+≤
+≤
+ 
+• 
+TC (t1,t2 ) the total cost per time unit. 
+ 
+2.2 Assumptions  
+• The demand rate is time dependent that is if ‘a’ is fix fraction of demand 
+and ‘b’ is that fraction of demand which is vary with time then demand 
+function is  f(t) = a + b t, where a>0 ,b>0. 
+• Shortages are allowed and partially backlogged. 
+• The lead time is zero. 
+• The replenishment rate is infinite. 
+• The planning horizon is infinite. 
+• The deterioration rate is constant. 
+• During stock out period, the backlogging rate is variable and is dependent 
+on the length of the waiting time for next replenishment. So that the 
+backlogging rate for negative inventory is, B (t) =  
+1
+1
+(
+)
+T
+t
+δ
++
+−
+  where 
+δ  is backlogging parameter and (T-t) is waiting time ( 1t
+t
+T
+≤≤
+). 
+ 
+ 
+
+--- Page 4 ---
+3614                                      V. K. Mishra and L. S. Singh 
+ 
+ 
+ 
+3.0 Mathematical Model 
+ 
+The rate of change of inventory during positive stock period [0,t1] and 
+shortage period [t1,T] is governed by the differential equations 
+( )
+1
+dI
+t
+dt
+( )
+(
+)
+1I
+t
+a
+bt
+θ
++
+= −
++
+    0
+1
+t
+t
+≤≤
+             … (1)                       
+( )
+(
+)
+(
+)
+2
+1
+dI
+t
+a
+bt
+dt
+T
+t
+δ
+−
++
+= +
+−
+     1t
+t
+T
+≤≤
+                … (2) 
+With boundary condition 
+I1 (t) =I2 (t) =0   at t=t1    and I1 (t) =IM   at t=0 
+ 
+ 
+4.0 Analytical Solution 
+ 
+Case I: Inventory level without shortage 
+During the period [0, t1], the inventory depletes due to the deterioration and 
+demand. Hence, the inventory level at any time during [0, t1] is described by 
+differential equation 
+    
+1
+1
+( )
+( )
+dI t
+t
+a
+dt
+θ
++
+= −           
+1
+0
+t
+t ≤
+≤
+                       … (3) 
+With the boundary condition I1 (t1) = 0 at t=t1 
+The solution of equation (3) is  
+(
+)
+1
+1
+1
+1
+( )
+(
+)
+(
+)
+1
+t
+t
+a
+b
+a
+b
+I t
+t
+e
+t
+θ
+θ
+θ
+θ
+θ
+θ
+θ
+−
+⎡
+⎤
+= −
+−
+−
++
+−
+−
+⎢
+⎥
+⎣
+⎦
+;   
+1
+0
+t
+t ≤
+≤
+         … (4) 
+Case II: Inventory level with shortage 
+During the interval [t1 ,T] the inventory level depends on demand and a 
+fraction of demand is backlogged. The state of inventory during [t1 ,T] can be 
+represented by the differential equation  
+ 
+( )
+(
+)
+2
+; 1
+1
+2
+1
+(
+)
+1
+2
+dI
+t
+a
+bt
+t
+t
+t
+t
+dt
+t
+t
+t
+δ
+−
++
+=
+≤≤
++
++
++
+−
+                           … (5) 
+With the boundary condition I2 (t1) = 0 at t=t1 
+The Solution of equation (5) is 
+1
+1
+(
+)
+[1
+(
+)]
+[1
+(
+)]
+(
+)
+1
+2
+1
+2
+1
+2
+( )
+log
+log
+2
+2
+1
+1
+2
+2
+t
+t
+t
+b
+t
+t
+t
+t
+t
+a
+b t
+t
+I
+t
+t
+t
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+δ
++
++
+−
++
++
++
++
+−
+−
+=
++
+−
++
++
+    … (6) 
+Therefore the total cost per replenishment cycle consists of the following 
+components: 
+Inventory holding cost per cycle; 
+ 
+ 
+ 
+
+--- Page 5 ---
+Deteriorating inventory model                                     3615 
+ 
+ 
+1
+( )
+1
+0
+t
+IHC
+h
+I t dt
+=
+∫
+ 
+1 1
+2
+2 2
+1
+1
+1
+(
+( ( 2
+2
+2
+2
+2
+2 )))
+1
+1
+1
+3
+2
+t
+t
+t
+IHC
+h
+e
+a
+e
+bt
+e
+b
+a
+t
+b
+t
+a
+b
+θ
+θ
+θ
+θ
+θ
+θ
+θ
+θ
+θ
+=−
+−
+−
++
++
++
++
+−
+    … (7) 
+Backordered cost per cycle;  
+   BC = 
+( )
+1
+2
+(
+)
+2
+1
+t
+t
+I
+t
+dt
+b
+t
+π
++
+−
+∫
+ 
+ 
+1
+1
+2
+2 2
+2
+(
+(2
+2
+2
+2
+log(
+)
+2
+2
+1 2
+2
+2
+3
+1
+2
+2
+ BC
+1
+1
+1
+2 log(
+)
+2
+log(
+)
+2
+log(
+)))
+1
+1
+1
+1
+2
+2
+2
+at
+bt
+bt t
+b t
+bt
+t
+b
+b
+a
+bt
+t
+t
+t
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+π
+δ
+δ
+δ
+δ
+δ
+⎛
+⎞
++
++
++
++
+⎜
+⎟
++
+⎜
+⎟
+=
+⎜
+⎟
+⎜
+⎟
++
++
++
+⎜
+⎟
++
++
++
+⎝
+⎠
+    … (8) 
+ 
+Lost sales cost per cycle;  
+    LS = 
+(
+)
+(
+)
+1
+2
+1
+(1
+)
+1
+1
+2
+1
+t
+t
+a
+bt
+dt
+l
+t
+t
+t
+t
+π
+δ
+⎛
+⎞
++
+⎛
+⎞
+⎜
+⎟
+⎜
+⎟
+−
++
+∫
+⎜
+⎟
+⎜
+⎟
++
++
+−
+⎜
+⎟
+⎜
+⎟
+⎝
+⎠
+⎝
+⎠
+ 
+     LS=      
+1
+2
+(
+(2
+2 2
+2 1 2 2
+2
+2
+log(1
+)
+2
+2
+2
+2
+2 log(1
+)
+2
+1log(1
+)
+2
+2log(1
+)
+2
+2))
+2
+2
+2
+at
+bt t
+bt
+a
+t
+l
+b
+t
+b t
+t
+b t
+t
+b t
+δ
+δ
+δ
+δ
+δ
+π
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+⎡
+⎤
++
++
+−
++
+⎢
+⎥
+⎢
+⎥
+⎢
+⎥
+−
++
+−
++
+−
++
++
+⎣
+⎦
+    … (9) 
+Purchase cost per cycle = (purchase cost per unit) X (Order quantity in one cycle) 
+                                PC = C.Q 
+When t = 0 the level of inventory is maximum and it is denoted by IM (= I1 (0)) 
+then from the equation (4) 
+1
+1
+( 1
+)
+2
+t
+a
+b
+a
+b
+IM
+e
+t
+θ
+θ
+θ
+θ
+θ
+θ
+⎡
+⎤
+= −
++
++
+−
+−
+⎢
+⎥
+⎣
+⎦
+                             ... (10) 
+The maximum backordered inventory is obtained at t = t1 +t2 then from the 
+equation (6) 
+              IB = -I2 (t1+t2) 
+             
+2
+[1
+(
+)]
+1
+1
+1
+2
+[
+log
+log
+]
+2
+1
+1
+2
+2
+b
+t
+t
+bt
+a
+IB
+t
+t
+δ
+δ
+δ
+δ
+δ
+δ
++
++
+= −
++
++
++
++
+  ... (11) 
+Thus the order size during total time interval [0,T]  
+Q = IM + IB  
+Now from equations (10) and (11) 
+ 
+ 
+ 
+ 
+
+--- Page 6 ---
+3616                                      V. K. Mishra and L. S. Singh 
+ 
+ 
+ 
+1
+1
+1
+( 1
+)
+lo g
+2
+1
+2
+[1
+(
+) ]
+2
+1
+2
+lo g (1
+)
+2
+2
+t
+a
+b
+a
+b
+a
+e
+t
+t
+Q
+b
+t
+t
+b t
+t
+θ
+θ
+θ
+θ
+θ
+δ
+δ
+θ
+δ
+δ
+δ
+δ
+⎡
+⎤
+⎡
+⎤
+−
++
++
+−
+−
+−
+⎢
+⎥
+⎢
+⎥
++
+⎣
+⎦
+⎢
+⎥
+= ⎢
+⎥
++
++
+⎢
+⎥
+−
++
+−
+⎢
+⎥
+⎣
+⎦
+ 
+Thus    PC = C.Q 
+            
+1
+1
+1
+( 1
+)
+log
+2
+1
+2
+[1
+(
+)]
+2
+1
+2
+log(1
+)
+2
+2
+t
+a
+b
+a
+b
+a
+e
+t
+t
+C
+b
+t
+t
+bt
+t
+θ
+θ
+θ
+θ
+θ
+δ
+δ
+θ
+δ
+δ
+δ
+δ
+⎡
+⎤
+⎡
+⎤
+−
++
++
+−
+−
+−
+⎢
+⎥
+⎢
+⎥
++
+⎣
+⎦
+⎢
+⎥
+=
+⎢
+⎥
++
++
+⎢
+⎥
+−
++
+−
+⎢
+⎥
+⎣
+⎦
+                ... (12) 
+ 
+Therefore the total cost per time unit is given by,  
+ = (
+)
+2
+1
+1
+t
+t +
+[Ordering cost + carrying cost + backordering cost + lost sale cost + 
+purchase Cost] 
+ TC(
+)
+1,
+t t  = (
+)
+2
+1
+1
+t
+t +
+ [OC+ IHC + BC + LS + PC] 
+Now putting the values in this equation of OC, IHC, BC, LS and PC then, 
+ 
+TC(
+)
+1,
+t t = 
+(
+)
+1
+2
+2 2
+1
+1
+1
+( ( 2
+2
+2
+2
+2
+2 ))
+1
+1
+1
+3
+2
+1
+2
+2
+2
+(
+(2
+2
+2
+log(1
+)
+2 log(1
+)
+2
+1 2
+2
+2
+2
+2
+2
+2
+log(1
+)
+2
+log(1
+)
+2
+1
+2
+2
+2
+2
+1
+2
+2 2
+2
+))
+(
+(2
+2
+2
+2
+2
+1 2
+2
+1
+3
+2
+1
+2
+t
+t
+t
+A
+h
+e
+a
+e
+bt
+e
+b
+a
+t
+b
+t
+a
+b
+at
+bt t
+bt
+a
+t
+b
+t
+l
+bt
+t
+bt
+t
+b t
+at
+bt
+bt t
+b t
+b
+t
+t
+θ
+θ
+θ
+θ
+θ
+θ
+θ
+θ
+θ
+π
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+π
+δ
+δ
+δ
+δ
+δ
+−
+−
+−−
++ −
++
++
++
+−
++
++
++
+−
++
+−
++
+−
++
+−
++
++
++
++
++
++
++
++
+1
+1
+1
+1
+2
+log(
+)
+2 log(
+)
+2 log(
+)
+2 log(
+)
+))
+2
+1
+1
+1
+1
+1
+2
+2
+2
+2
+1
+1
+1
+( 1
+)
+log
+2
+1
+2
+[1
+(
+)]
+2
+1
+2
+log(1
+)
+2
+2
+bt
+b
+a
+b
+t
+t
+t
+t
+t
+t
+a
+b
+a
+b
+a
+e
+t
+t
+c
+b
+t
+t
+bt
+t
+δ
+δ
+δ
+δ
+δ
+δ
+δ
+θ
+θ
+θ
+θ
+θ
+δ
+δ
+θ
+δ
+δ
+δ
+δ
+⎛
+⎞
+⎜
+⎟
+⎜
+⎟
+⎜
+⎟
+⎜
+⎟
+⎜
+⎟
+⎜
+⎟
+⎜
+⎟
+⎜
+⎟
+⎜
+⎜
+⎜
+⎜
++
++
++
+⎜
++
++
++
++
+⎜
+⎜
+⎛
+⎞
+⎡
+⎤
+⎡
+⎤
+⎜
+−
++
++
+−
+−
+−
+⎜
+⎟
+⎢
+⎥
+⎢
+⎥
++
+⎣
+⎦
+⎜
+⎜
+⎟
+⎢
+⎥
++
+⎜
+⎜
+⎟
+⎢
+⎥
++
++
+⎜
+⎜
+⎟
+⎢
+⎥
+−
++
+−
+⎜
+⎜
+⎟
+⎢
+⎥
+⎜
+⎣
+⎦
+⎝
+⎠
+⎝
+⎠
+⎟
+⎟
+⎟
+⎟
+⎟
+⎟
+⎟
+⎟
+⎟
+⎟
+⎟
+⎟⎟
+         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                   … (13) 
+The necessary condition for the total cost per time unit, to be minimize is  
+ 
+ 
+
+--- Page 7 ---
+Deteriorating inventory model                                     3617 
+ 
+ 
+0
+1
+TC
+t
+∂
+=
+∂
+ and 
+0
+2
+TC
+t
+∂
+=
+∂
+ 
+Provided  
+2
+2
+2
+0
+2
+2
+1
+2
+1
+2
+TC
+T C
+T C
+t
+t
+t
+t
+⎛
+⎞⎛
+⎞
+⎛
+⎞
+∂
+∂
+∂
+⎜
+⎟⎜
+⎟
+⎜
+⎟
+−
+>
+⎜
+⎟⎜
+⎟
+⎜
+⎟
+∂
+∂
+⎜
+⎟⎜
+⎟
+∂
+∂
+⎝
+⎠
+⎝
+⎠⎝
+⎠
+                                 … (14) 
+ 
+ 
+5.0 Sensitivity Analysis 
+ 
+Consider an inventory system with the following parameter in proper unit 
+A=2500, h=.5, C=4, pib=12, pil=15, delta=8, a=25, b=20.0, theta=.005 .The 
+computer output by using maple mathematical software is t1=5.4 t2=0.4 and TC= 
+915.30. i.e. the value of t1 at which the inventory level become zero is 5.40 unit 
+and shortage period is 0.04 unit .The variation in the parameter is as follows 
+ 
+Table 5.1 Variation in parameter δ  Table-5.2 Variation in parameter θ 
+ 
+ 
+δ 
+t1 
+t2 
+TC 
+6.4 
+5.40 
+.04 915.07
+8.0 
+5.40 
+.04 915.30
+8.8 
+5.40 
+.03 915.39
+9.2 
+5.41 
+.03 915.44
+ 
+Table- 5.3 Variation in parameter b   Table- 5.4 Variation in parameter a 
+ 
+ 
+From table 5.1, 5.2, 5.3 and 5.4 we observed that the total cost increases if we 
+increases the parameter a,b , θ and δ .it’s also observed that the parameter a and b 
+is more sensitive than the parameter θ and δ 
+If we plot the total cost function (13) with some values of t1 and t2 s.t., t1= 5.0 to 
+5.80 with equal interval t2 = 0.01 to.09.Then we get a three dimensional convex  
+θ 
+t1 
+t2 
+TC 
+.0040
+5.42
+.04 
+913.99 
+.0045
+5.41
+.04 
+914.65 
+.0050
+5.40
+.04 
+915.30 
+.0055
+5.40
+.04 
+915.96 
+a 
+t1 
+t2 
+TC 
+26.0 
+5.40 
+.04
+888.22 
+25.0 
+5.40 
+.04
+888.21 
+22.5 
+5.42 
+.04
+888.20 
+20.0 
+5.44 
+.04
+888.18 
+b 
+t1 
+t2 
+TC 
+21.0 
+5.30 
+.04 931.15
+20.0 
+5.40 
+.04 915.30
+18.0 
+5.62 
+.04 882.44
+16.0 
+5.87 
+.04 847.71
+
+--- Page 8 ---
+3618                                      V. K. Mishra and L. S. Singh 
+ 
+ 
+Graph of TC given by the figure (5.1) 
+                  
+ 
+          Fig-5.1 
+ 
+6.0 Concluding Remarks 
+ 
+In this paper, we developed a model for deteriorating item with time 
+dependent demand and partial backlogging and give analytical solution of the 
+model that minimize the total inventory cost. The deterioration factor taken into 
+consideration in the present model, as almost all items undergo either direct 
+spoilage (like fruits, vegetable etc) or physical decay (in case of radioactive 
+substance etc.) in the course time, deterioration is natural feature in the inventory 
+system. The model is very useful in the situation in which the demand rate is 
+depending upon the time. 
+ 
+ 
+References 
+ 
+[1] Deb, M., and Chaudhary, K., A note on the heuristic for replenishment of 
+trended inventories considering shortages, Journal of the Operational 
+Research Society, 38(1987), 459-463. 
+[2] Ghare, P. M. and Schrader, G. F., A model for an exponentially decaying 
+inventory, Journal of Industrial Engineering, 14(1963), 238-243. 
+[3] Goyal, S. K. and B. C. Giri, Recent trends in modeling of deteriorating 
+inventory, European Journal of Operational Research, 134(2001), 1-16. 
+[4] Hadley, G., Whitin, T., Analysis of Inventory Systems. Prentice Hall, 
+Englewood Cliffs (1963). 
+[5] Hariga, M. A., An EOQ model for deteriorating items with shortages and 
+time-varying demand, Journal of the Operational Research Society, 46(1995), 
+398-404. 
+[6] Hariga, M. A., Economic analysis of dynamic inventory models with 
+non-stationary costs and demand, International Journal of Production 
+Economics, 35(1994), 255-266. 
+[7] Harris, F.W., Operations and cost. Chicago (1915). 
+
+--- Page 9 ---
+Deteriorating inventory model                                     3619 
+ 
+ 
+ 
+[8] Jalan, A.K., Giri, R. R., and Chaudhary, K.S., EOQ model for items with 
+weibull 
+distribution 
+deterioration 
+shortages 
+and 
+trended 
+demand. 
+International Journal of System Science. 27(1996), 851-855. 
+[9] Naddor, E., Inventory System. Willey New York, (1966). 
+[10] Nahmias, S., Perishable inventory theory: A review. Operations Research, 
+30(1978), 680-708. 
+[11]  Pareek,S.,Mishra,V.K. and Rani,S., An Inventory Model for time dependent 
+deteriorating item with salvage value and shortages, Mathematics Today, 
+25(2009), 31-39. 
+[12] Roy, Ajanta, An inventory model for deteriorating items with price 
+dependent demand and time varying holding cost. Advanced Modeling and 
+Optimization, 10(2008), 25-37.  
+[13] Shah, Nita H. and Acharya, Ankit S, A time dependent deterioration order 
+level inventory model for declining demand, Applied Mathematical Sciences, 
+2(2008), 2795-2802. 
+[14] Starr, M.K., and D.W. Miller., Inventory Control-Theory and Practice 
+2/e.Prentice hall, Englewood Cliffs, N.J. (1974).   
+[15] Wee, H. M., A deterministic lot-size inventory model for deterioration items 
+with shortages and a declining market, Computers and Industrial Engineering, 
+22(1995), 345-356. 
+[16] You, S.P, Inventory Policy for products with price and time dependent 
+demands, Journal of Operational Research Society, 56(2005), 870-873. 
+ 
+ 
+Received: June, 2010 
+

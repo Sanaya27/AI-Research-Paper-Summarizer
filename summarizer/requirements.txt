@@ -1,0 +1,8 @@
+# PDF Text Extraction
+PyMuPDF==1.23.19
+
+# Google Gemini API
+google-generativeai==0.8.5
+
+# Environment Variable Loader
+python-dotenv==1.0.1
